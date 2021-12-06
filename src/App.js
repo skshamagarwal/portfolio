@@ -8,8 +8,6 @@ import Projects from "./pages/Projects";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 
-import './styles/App/App.css'
-
 export default function App() {
   return (
     <>
