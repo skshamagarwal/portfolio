@@ -20,9 +20,9 @@ const ButtonStyle = styled.div`
       color: ${(props) => (props.outline ? "black" : "var(--gray-1)")};
     }
   }
-  @media only screen and (max-width) {
+  @media only screen and (max-width: 768px) {
     .button {
-      font-size: 1.4;
+      font-size: 1.4rem;
     }
   }
 `;

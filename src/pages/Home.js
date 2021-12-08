@@ -46,6 +46,22 @@ const HomeStyles = styled.div`
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    .hero__heading {
+      font-size: 1.5rem;
+      .hero__name {
+        font-size: 4rem;
+      }
+    }
+    .hero__info {
+      .buttons {
+        a {
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
 `;
 
 export default function Home() {
@@ -70,11 +86,7 @@ export default function Home() {
                 btnText="Download Resume"
                 outline={false}
               />
-              <Button
-                btnLink="/projects"
-                btnText="Contact"
-                outline={true}
-              />
+              <Button btnLink="/projects" btnText="Contact" outline={true} />
             </div>
           </div>
         </div>
