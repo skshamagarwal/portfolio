@@ -10,7 +10,7 @@ const NavBarStyles = styled.div`
   left: 0;
   width: 100%;
   background: var(--dark-bg);
-
+  
   .navIcon {
     display: none;
     outline: none;
@@ -21,6 +21,7 @@ const NavBarStyles = styled.div`
     height: 4rem;
     cursor: pointer;
     transition: 0.5s ease;
+    z-index: 10;
     * {
       pointer-events: none;
     }
@@ -30,6 +31,7 @@ const NavBarStyles = styled.div`
   }
 
   .wrapper {
+    position: absolute;
     padding: 2rem 2rem;
     display: flex;
     width: 100%;
@@ -62,7 +64,7 @@ const NavBarStyles = styled.div`
             display: inline-block;
             font-family: "RobotoMono Regular";
             margin: 0 0.5em;
-            padding: 0.3rem 1rem;
+            padding: 1rem 1rem;
             font-size: 1.8rem;
             letter-spacing: 2px;
             color: var(--gray-1);
@@ -75,14 +77,9 @@ const NavBarStyles = styled.div`
         }
       }
     }
-    .resume {
-      font-family: "RobotoMono Regular";
-      font-size: 1.8rem;
-      letter-spacing: 2px;
-      cursor: pointer;
-    }
   }
   @media only screen and (max-width: 768px) {
+    padding: 0;
     .navIcon {
       display: block;
     }
@@ -90,8 +87,10 @@ const NavBarStyles = styled.div`
       transform: translateY(calc(-100% - var(--top)));
     }
     .wrapper {
+      position: absolute;
+      background-color: var(--deep-dark);
       flex-direction: column;
-      height: 100vh;
+      height: 97.5vh;
       width: 100vw;
       justify-content: space-evenly;
       --top: 1rem;
@@ -113,9 +112,6 @@ const NavBarStyles = styled.div`
             }
           }
         }
-      }
-      .resume {
-        font-size: 3rem;
       }
     }
   }
@@ -176,7 +172,6 @@ export default function NavBar() {
             </li>
           </ul>
         </div>
-        <h1 className="resume">RESUME</h1>
       </div>
     </NavBarStyles>
   );
