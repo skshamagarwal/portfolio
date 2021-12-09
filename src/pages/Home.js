@@ -6,8 +6,8 @@ import Social from "../components/Social";
 
 const HomeStyles = styled.div`
   .hero {
-    height: 100vh;
     min-height: 500px;
+    height: 100vh;
     width: 100%;
     text-align: center;
     display: flex;
@@ -47,6 +47,23 @@ const HomeStyles = styled.div`
     }
   }
 
+  .contact__banner {
+    padding: 10rem 0;
+    .contact__wrapper {
+      background-color: var(--deep-dark);
+      border-radius: 12px;
+      padding: 5rem 0rem;
+      text-align: center;
+      p {
+        font-size: 1.8rem;
+      }
+      .contact__heading {
+        font-size: 4rem;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     .hero__heading {
       font-size: 1.5rem;
@@ -60,6 +77,9 @@ const HomeStyles = styled.div`
           margin: 0.5rem;
         }
       }
+    }
+    .contact__heading {
+      font-size: 1.8rem;
     }
   }
 `;
@@ -77,17 +97,27 @@ export default function Home() {
           <div className="hero__info">
             <PText>
               {
-                "I love bringing concepts to life. With every line of code, I strive to make a new step to explore more."
+                "I am a Computer Science Student who is looking forward to work with you... I love solving complex problems and bringing concepts to life. With every line of code that I write, I strive to make a new step to explore more."
               }
             </PText>
             <div className="buttons">
               <Button
                 btnLink="/projects"
-                btnText="Download Resume"
+                btnText="Download CV"
                 outline={false}
               />
               <Button btnLink="/projects" btnText="Contact" outline={true} />
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="contact__banner">
+        <div className="container">
+          <div className="contact__wrapper">
+            <PText>Have a project in mind ?</PText>
+            <h3 className="contact__heading">Let me help you</h3>
+            <Button btnText="Contact Now" btnLink="/contact"></Button>
           </div>
         </div>
       </div>

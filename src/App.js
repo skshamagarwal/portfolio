@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Home from "./pages/Home";
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

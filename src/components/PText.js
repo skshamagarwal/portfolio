@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const PStyle = styled.div`
     color: var(--white);
-    width: 80%;
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
     font-size: 2.2rem;
