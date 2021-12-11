@@ -3,6 +3,10 @@ import styled from "styled-components";
 import PText from "../components/PText";
 import Button from "../components/Button";
 import Social from "../components/Social";
+import SectionTitle from "../components/SectionTitle";
+import ServicesSectionItem from "../components/ServicesSectionItem";
+import { MdDesktopMac } from "react-icons/md";
+import { BsArrowDown } from "react-icons/bs";
 
 const HomeStyles = styled.div`
   .hero {
@@ -47,6 +51,24 @@ const HomeStyles = styled.div`
     }
   }
 
+  .scroll__icon {
+    text-align: center;
+    margin-top: -8rem;
+    svg {
+      width: 5rem;
+    }
+  }
+
+  .services__section {
+    padding: 10rem 0;
+    .services__items {
+      display: flex;
+      gap: 10rem;
+      justify-content: space-between;
+      margin-top: 5rem;
+    }
+  }
+
   .contact__banner {
     padding: 10rem 0;
     .contact__wrapper {
@@ -78,6 +100,21 @@ const HomeStyles = styled.div`
         }
       }
     }
+
+    .scroll__icon {
+      margin-top: 0;
+    }
+
+    .services__section {
+      .services__items {
+        flex-direction: column;
+        max-width: 350px;
+        margin: 0 auto;
+        margin-top: 5rem;
+        gap: 5rem;
+      }
+    }
+
     .contact__heading {
       font-size: 1.8rem;
     }
@@ -108,6 +145,36 @@ export default function Home() {
               />
               <Button btnLink="/projects" btnText="Contact" outline={true} />
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="scroll__icon">
+        <BsArrowDown />
+      </div>
+
+      <div className="services__section">
+        <div className="container">
+          <SectionTitle
+            heading="Services"
+            subheading="things I can do for you..."
+          ></SectionTitle>
+          <div className="services__items">
+            <ServicesSectionItem
+              icon={<MdDesktopMac />}
+              title="Web Development"
+              desc="I develop responsive and high performance websites asper requirements using React, Django or HTML & CSS only."
+            />
+            <ServicesSectionItem
+              icon={<MdDesktopMac />}
+              title="Mobile App Dev"
+              desc="I also develop mobile applications asper requirements using Flutter & Dart."
+            />
+            <ServicesSectionItem
+              icon={<MdDesktopMac />}
+              title="Web Crawling"
+              desc="I can scrape data from web and provide it in required formats using Python / NodeJS."
+            />
           </div>
         </div>
       </div>
