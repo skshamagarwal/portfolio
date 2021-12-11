@@ -106,6 +106,10 @@ export default function Footer() {
                 path: "https://github.com/skshamagarwal",
               },
               {
+                title: "- Instagram",
+                path: "https://www.instagram.com/s_hivu_/",
+              },
+              {
                 title: "- Twitter",
                 path: "https://twitter.com/skshamagarwal",
               },

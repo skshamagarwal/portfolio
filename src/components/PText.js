@@ -6,7 +6,7 @@ const PStyle = styled.div`
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    font-size: 2.2rem;
+    font-size: 2rem;
     line-height: 1.3em;
     @media only screen and (max-width: 768px) {
         font-size: 1.6rem;

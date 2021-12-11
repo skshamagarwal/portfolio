@@ -87,7 +87,7 @@ const HomeStyles = styled.div`
 export default function Home() {
   return (
     <HomeStyles>
-      <Social />
+      {/* <Social /> */}
       <div className="hero">
         <div className="container">
           <h1 className="hero__heading">
