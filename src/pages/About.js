@@ -4,6 +4,8 @@ import Button from "../components/Button";
 import styled from "styled-components";
 import AboutItems from "../components/AboutItems";
 
+import Img from "../assets/images/img.jpg"
+
 const AboutStyles = styled.div`
   padding: 16rem 0 10rem 0;
   .top-section {
@@ -77,32 +79,23 @@ export default function About() {
             <p className="about__subheading">
               Hi, I am <span>Saksham Agarwal</span>
             </p>
-            <h2 className="about__heading">A Computer Science Student</h2>
+            <h2 className="about__heading">A Geek who thinks Coding is a Superpower</h2>
             <div className="about__info">
               <PText>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nesciunt excepturi sapiente officia veritatis, illum quas, nemo
-                distinctio nulla iure totam omnis dolorum facere. Dignissimos
-                suscipit soluta dolore eum cumque hic ipsam placeat, assumenda
-                praesentium ea molestiae id fuga dolores consequuntur in
-                officiis natus esse. Perferendis consequuntur quis dicta
-                possimus.
+                I am from Mount Abu - A hill station in the Aravalli range of Rajasthan, Currently in Pune Pursuing my Bachelors.
+                Alongside that, working at Frshr Technologies Pvt. Ltd. as an Python Developer Intern.
                 <br />
                 <br />
-                Corporis numquam nam facilis eaque sequi reprehenderit
-                voluptatum officiis cum odit voluptatem. Commodi quo corporis
-                velit nesciunt deserunt perspiciatis, quos nam sit nisi, sequi
-                excepturi laudantium sunt hic voluptatem quae illum quam soluta
-                quisquam atque omnis itaque. Odio numquam facere voluptatibus
-                dicta delectus eius natus doloremque ullam exercitationem,
-                tempore sint ad.
+                I deveoped interest in coding because I hated all the other subjects during my schooling.
+                Back then getting to know coding was my only option, and now, not getting to explore it is my greatest fear.
+                I love learning & working with new technologies, and possess interest in Competetive Programming as well as contributing to Open Source. 
               </PText>
             </div>
             <Button btnText="Download CV" btnLink="#" />
           </div>
           <div className="right">
             <img
-              src="https://www.civronpharma.com/images/2018/03/17/sheer-about-center.jpg"
+              src={Img}
               alt="My Img"
             />
           </div>
