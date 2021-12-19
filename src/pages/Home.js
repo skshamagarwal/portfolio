@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PText from "../components/PText";
 import Button from "../components/Button";
-import Social from "../components/Social";
+import CV from "../assets/files/cv.pdf"
 import SectionTitle from "../components/SectionTitle";
 import ServicesSectionItem from "../components/ServicesSectionItem";
 import { MdDesktopMac } from "react-icons/md";
@@ -121,6 +121,29 @@ const HomeStyles = styled.div`
   }
 `;
 
+const ButtonStyle = styled.div`
+  margin-top: 2rem;
+  .button {
+    font-size: 1.8rem;
+    background-color: var(--gray-1);
+    padding: 0.7em 1.5em;
+    border-radius: 8px;
+    border: 2px solid var(--gray-1);
+    color: black;
+    transition: 1s ease;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--gray-1);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .button {
+      font-size: 1.4rem;
+    }
+  }
+`;
+
 export default function Home() {
   return (
     <HomeStyles>
@@ -138,11 +161,11 @@ export default function Home() {
               }
             </PText>
             <div className="buttons">
-              <Button
-                btnLink="/projects"
-                btnText="Download CV"
-                outline={false}
-              />
+              <ButtonStyle>
+              <a className="button" href={CV} download="Saksham's Resume" target='_blank' rel="noreferrer">
+                Download CV
+              </a>
+              </ButtonStyle>
               <Button btnLink="/contact" btnText="Contact" outline={true} />
             </div>
           </div>
