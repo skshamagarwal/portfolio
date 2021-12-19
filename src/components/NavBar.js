@@ -159,10 +159,10 @@ export default function NavBar() {
                 PROJECTS</NavLink>
             </li>
             <li>
-              <NavLink to="/blogs"
+              <NavLink to="/experience"
                 onClick={() => setShowNav(!showNav)}
                 role="button">
-                BLOG</NavLink>
+                EXPERIENCE</NavLink>
             </li>
             <li>
               <NavLink to="/contact"

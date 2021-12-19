@@ -143,7 +143,7 @@ export default function Home() {
                 btnText="Download CV"
                 outline={false}
               />
-              <Button btnLink="/projects" btnText="Contact" outline={true} />
+              <Button btnLink="/contact" btnText="Contact" outline={true} />
             </div>
           </div>
         </div>
