@@ -5,6 +5,7 @@ import styled from "styled-components";
 import AboutItems from "../components/AboutItems";
 
 import Img from "../assets/images/img.jpg"
+import DownloadCV from "../components/DownloadCV";
 
 const AboutStyles = styled.div`
   padding: 16rem 0 10rem 0;
@@ -91,7 +92,7 @@ export default function About() {
                 I love learning & working with new technologies, and possess interest in Competetive Programming as well as contributing to Open Source. 
               </PText>
             </div>
-            <Button btnText="Download CV" btnLink="#" />
+            <DownloadCV />
           </div>
           <div className="right">
             <img
