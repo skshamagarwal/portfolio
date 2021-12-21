@@ -7,6 +7,7 @@ import ServicesSectionItem from "../components/ServicesSectionItem";
 import { MdDesktopMac } from "react-icons/md";
 import { BsArrowDown } from "react-icons/bs";
 import DownloadCV from "../components/DownloadCV";
+import TestimonialsSection from "../components/TestimonialsSection";
 
 const HomeStyles = styled.div`
   .hero {
@@ -149,6 +150,16 @@ export default function Home() {
         <BsArrowDown />
       </div>
 
+      {/* <div className="project__section">
+        <div className="container">
+        <SectionTitle
+            heading="Projects"
+            subheading="my recent works"
+          ></SectionTitle>
+
+        </div>
+      </div> */}
+      
       <div className="services__section">
         <div className="container">
           <SectionTitle
@@ -175,6 +186,7 @@ export default function Home() {
         </div>
       </div>
 
+      <TestimonialsSection />
       <div className="contact__banner">
         <div className="container">
           <div className="contact__wrapper">

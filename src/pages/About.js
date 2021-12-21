@@ -1,9 +1,7 @@
 import React from "react";
 import PText from "../components/PText";
-import Button from "../components/Button";
 import styled from "styled-components";
 import AboutItems from "../components/AboutItems";
-
 import Img from "../assets/images/img.jpg"
 import DownloadCV from "../components/DownloadCV";
 

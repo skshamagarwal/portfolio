@@ -1,27 +1,19 @@
 const testimonials = [
   {
     id: 1,
-    name: 'Shaif Arfan',
+    name: 'Mr. Soubhik Das',
     title: 'CEO',
-    org: 'WEB CIFAR',
+    org: 'Manastik Pvt Ltd',
     desc:
-      'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
+      'Saksham maintained professionalism & discipline during the internship & managed to complete all the tasks as assigned. We enjoyed working with him in this short period.',
   },
   {
     id: 2,
-    name: 'Fahim Elahe',
-    title: 'Co-founder',
-    org: 'Kreetive',
+    name: 'Mr. Sharad Goel',
+    title: 'Managing Director',
+    org: 'Essential Services Outsource Pvt Ltd',
     desc:
-      'Really amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing. Do really high-quality work.',
-  },
-  {
-    id: 3,
-    name: 'Sayed',
-    title: 'Marketing Head',
-    org: 'Eleven Dawn',
-    desc:
-      'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
+      'Saksham is a quick learner and very deligent towards the work assigned to him. He finished all of his tasks on time with exceptional quality.',
   },
 ];
 export default testimonials;
