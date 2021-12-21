@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, HashRouter } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -11,7 +11,7 @@ import Experience from "./pages/Experience";
 
 export default function App() {
   return (
-    <>
+    <HashRouter basename="/">
       <Router>
         <NavBar />
         <Routes>
@@ -23,6 +23,6 @@ export default function App() {
         </Routes>
         <Footer />
       </Router>
-    </>
+    </HashRouter>
   );
 }
