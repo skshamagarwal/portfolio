@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.b06b2af9.chunk.js",
-    "main.js.map": "/static/js/main.b06b2af9.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.26096b02.js",
-    "runtime-main.js.map": "/static/js/runtime-main.26096b02.js.map",
-    "static/js/2.502dc5c0.chunk.js": "/static/js/2.502dc5c0.chunk.js",
-    "static/js/2.502dc5c0.chunk.js.map": "/static/js/2.502dc5c0.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.502dc5c0.chunk.js.LICENSE.txt": "/static/js/2.502dc5c0.chunk.js.LICENSE.txt",
-    "static/media/LilitaOne-Regular.797856d9.ttf": "/static/media/LilitaOne-Regular.797856d9.ttf",
-    "static/media/Montserrat-Bold.079ca05d.ttf": "/static/media/Montserrat-Bold.079ca05d.ttf",
-    "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/static/media/Montserrat-SemiBold.fa8441f3.ttf",
-    "static/media/RobotoMono-Regular.418a8f9f.ttf": "/static/media/RobotoMono-Regular.418a8f9f.ttf",
-    "static/media/cv.d5632e93.pdf": "/static/media/cv.d5632e93.pdf",
-    "static/media/img.2fb80eb5.jpg": "/static/media/img.2fb80eb5.jpg",
-    "static/media/map.163c261a.JPG": "/static/media/map.163c261a.JPG"
+    "main.js": "/portfolio/static/js/main.bfa8a621.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bfa8a621.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
+    "static/js/2.695a4d95.chunk.js": "/portfolio/static/js/2.695a4d95.chunk.js",
+    "static/js/2.695a4d95.chunk.js.map": "/portfolio/static/js/2.695a4d95.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/js/2.695a4d95.chunk.js.LICENSE.txt": "/portfolio/static/js/2.695a4d95.chunk.js.LICENSE.txt",
+    "static/media/LilitaOne-Regular.797856d9.ttf": "/portfolio/static/media/LilitaOne-Regular.797856d9.ttf",
+    "static/media/Montserrat-Bold.079ca05d.ttf": "/portfolio/static/media/Montserrat-Bold.079ca05d.ttf",
+    "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/portfolio/static/media/Montserrat-SemiBold.fa8441f3.ttf",
+    "static/media/RobotoMono-Regular.418a8f9f.ttf": "/portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
+    "static/media/cv.d5632e93.pdf": "/portfolio/static/media/cv.d5632e93.pdf",
+    "static/media/img.2fb80eb5.jpg": "/portfolio/static/media/img.2fb80eb5.jpg",
+    "static/media/map.163c261a.JPG": "/portfolio/static/media/map.163c261a.JPG"
   },
   "entrypoints": [
-    "static/js/runtime-main.26096b02.js",
-    "static/js/2.502dc5c0.chunk.js",
-    "static/js/main.b06b2af9.chunk.js"
+    "static/js/runtime-main.0bf68c44.js",
+    "static/js/2.695a4d95.chunk.js",
+    "static/js/main.bfa8a621.chunk.js"
   ]
 }
