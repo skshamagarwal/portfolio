@@ -115,9 +115,9 @@ export default function Contact() {
             "\nPlease try again or send an email on skshamagarwal@gmail.com"
         );
       });
-      setName("");
-      setEmail("");
-      setMessage("");
+    setName("");
+    setEmail("");
+    setMessage("");
   }
   return (
     <>
@@ -139,6 +139,7 @@ export default function Contact() {
                   <label htmlFor="name">
                     Your Name
                     <input
+                      required
                       type="text"
                       id="name"
                       name="name"
@@ -151,6 +152,7 @@ export default function Contact() {
                   <label htmlFor="email">
                     Your Email
                     <input
+                      required
                       name="email"
                       type="text"
                       id="email"
@@ -164,6 +166,7 @@ export default function Contact() {
                   <label htmlFor="message">
                     Your Message
                     <textarea
+                      required
                       name="message"
                       type="text"
                       id="message"
