@@ -3,8 +3,8 @@ import { MdEmail, MdLocalPhone } from "react-icons/md";
 import styled from "styled-components";
 import ContactInfoItem from "../components/ContactInfoItem";
 import SectionTitle from "../components/SectionTitle";
-import Map from "../components/Map"
-
+import Map from "../components/Map";
+import emailjs from "emailjs-com";
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
@@ -92,6 +92,33 @@ export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_6rjxzum",
+        "template_zwpxzec",
+        e.target,
+        "user_4XxLhG5Qjqm436rvmL6fY"
+      )
+      .then((res) => {
+        alert(
+          "Your message has been sent, you will recieve a response on you email soon."
+        );
+      })
+      .catch((er) => {
+        alert(
+          "Some problem occurred while sending the message:: " +
+            er +
+            "\nPlease try again or send an email on skshamagarwal@gmail.com"
+        );
+      });
+      setName("");
+      setEmail("");
+      setMessage("");
+  }
   return (
     <>
       <ContactSectionStyle>
@@ -107,7 +134,7 @@ export default function Contact() {
               <ContactInfoItem text="DY Patil College Road, Akurdi, Pune, India" />
             </div>
             <div className="right">
-              <FormSectionStyle>
+              <FormSectionStyle onSubmit={sendEmail}>
                 <div className="form-group">
                   <label htmlFor="name">
                     Your Name
@@ -124,6 +151,7 @@ export default function Contact() {
                   <label htmlFor="email">
                     Your Email
                     <input
+                      name="email"
                       type="text"
                       id="email"
                       email="email"
@@ -136,6 +164,7 @@ export default function Contact() {
                   <label htmlFor="message">
                     Your Message
                     <textarea
+                      name="message"
                       type="text"
                       id="message"
                       message="message"
@@ -144,7 +173,9 @@ export default function Contact() {
                     />
                   </label>
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit" value="Send">
+                  Send
+                </button>
               </FormSectionStyle>
             </div>
           </div>
