@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const ProjectCardStyles = styled.div`
@@ -22,6 +21,9 @@ const ProjectCardStyles = styled.div`
     }
 
     .detail {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       visibility: hidden;
       opacity: 0;
       transition: visibility 0s, opacity 0.5s linear;
@@ -29,7 +31,7 @@ const ProjectCardStyles = styled.div`
       height: 100%;
       width: 100%;
       position: absolute;
-      padding: 2rem;
+      padding: 0 2rem;
       top: 0;
 
       text-align: center;

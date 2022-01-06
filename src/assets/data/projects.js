@@ -11,7 +11,7 @@ const projectList = [
     firstName: 'Predix',
     lastName: 'DB',
     desc:
-      'Get ready for an seamless media consumption experience.\nPredixDB is an online platform which assists users to keep track of the media that they have already watched, currently watching, or planning to watch next. It also provides personalized recommendations based on user interests.',
+      'Online platform that assists users to keep track media watched, currently watching, or planning to watch next. It even delivers personalized recommendations for each individual.',
     img: PredixImg,
     tech: ['django', 'html', 'css', 'javascript', 'ai ml', 'python'],
     liveLink: 'https://predixdb.herokuapp.com/',
@@ -55,7 +55,7 @@ const projectList = [
     firstName: 'MED',
     lastName: 'CARE',
     desc:
-      'Mobile Application for Consulting Doctors, keeping Track of Health Checkup, mark Important Dates and Appointments, even purchase medicines... All in one Applcation for user\'s daily Health Care Routine.',
+      'Mobile Application for Consulting Doctors, keeping track of Health Checkups and even mark important Dates & Appointments... All in one Applcation for user\'s daily Health Care Routine.',
     img: MedCareImg,
     tech: ['flutter', 'dart'],
     liveLink: 'https://github.com/skshamagarwal/MedCare',
