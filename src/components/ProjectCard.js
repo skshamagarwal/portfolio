@@ -1,12 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-
-import MapImg from "../assets/images/map.JPG";
 
 const ProjectCardStyles = styled.div`
   position: relative;
-  height: 30rem;
-  width: 30rem;
+  width: 19vw;
+  height: 15vw;
   border: 2px solid var(--gray-1);
   border-radius: 1rem;
   overflow: hidden;
@@ -30,10 +29,16 @@ const ProjectCardStyles = styled.div`
       height: 100%;
       width: 100%;
       position: absolute;
-      padding: 3rem;
+      padding: 2rem;
       top: 0;
+
       text-align: center;
       transition: 1s;
+      overflow-y: auto;
+      ::-webkit-scrollbar {
+        width: 0;
+      }
+
       .title {
         margin-bottom: 1.5rem;
         p {
@@ -54,7 +59,8 @@ const ProjectCardStyles = styled.div`
       }
       .buttons {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 1rem;
         button {
           cursor: pointer;
           border: 2px solid var(--deep-dark);
@@ -73,28 +79,28 @@ const ProjectCardStyles = styled.div`
     }
   }
 `;
-export default function ProjectCard() {
+export default function ProjectCard({ projects }) {
   return (
     <ProjectCardStyles>
       <div className="card">
-        <img src={MapImg} alt="" />
+        <img src={projects.img} alt="" />
         <div className="detail">
           <div className="title">
             <p>
-              PREDIX <span>DB</span>
+              {projects.firstName}
+              <span>{projects.lastName}</span>
             </p>
           </div>
           <div className="desc">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
-              vero aspernatur voluptas quibusdam molestiae maxime obcaecati
-              recusandae aperiam. Officiis, quos officia? Mollitia incidunt
-              beatae, distinctio facilis animi iusto et reiciendis.
-            </p>
+            <p>{projects.desc}</p>
           </div>
           <div className="buttons">
-            <button>Github</button>
-            <button>View Live</button>
+            <a href={projects.githubLink}>
+              <button>Github</button>
+            </a>
+            <a href={projects.liveLink}>
+              <button>View Live</button>
+            </a>
           </div>
         </div>
       </div>

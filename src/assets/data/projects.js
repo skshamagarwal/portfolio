@@ -1,46 +1,66 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import PredixImg from '../images/predix.jpg'
+import CAPImg from '../images/cap.JPG'
+import ImgDetectionImg from '../images/image_detection.jpg'
+import EmailBotImg from '../images/email_bot.png'
+import MedCareImg from '../images/medcare.JPG'
 
-const projects = [
+const projectList = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
+    firstName: 'Predix',
+    lastName: 'DB',
     desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+      'Get ready for an seamless media consumption experience.\nPredixDB is an online platform which assists users to keep track of the media that they have already watched, currently watching, or planning to watch next. It also provides personalized recommendations based on user interests.',
+    img: PredixImg,
+    tech: ['django', 'html', 'css', 'javascript', 'ai ml', 'python'],
+    liveLink: 'https://predixdb.herokuapp.com/',
+    githubLink: 'https://github.com/skshamagarwal/Predix'
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    firstName: 'HealthCare ',
+    lastName: 'CAP',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+      'Cardiovascular Ailment Prediction - an awesome Heart Attack Prediction application using Machine Learning Techniques!',
+    img: CAPImg,
+    tech: ['django', 'html', 'css', 'javascript', 'ai ml', 'python'],
+    liveLink: 'https://mycap.herokuapp.com/',
+    githubLink: 'https://github.com/skshamagarwal/CAP'
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
+    firstName: 'Image ',
+    lastName: 'Detection',
     desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+      'Machine Learning Model that detect objects in an image using VGG Transfer Learning. It uses CNN Technique to identify and train upon the dataset.',
+    img: ImgDetectionImg,
+    tech: ['ai ml', 'python'],
+    liveLink: 'https://github.com/skshamagarwal/Reverse-Image-CNN/blob/main/VGG16%20Model%20Training.ipynb',
+    githubLink: 'https://github.com/skshamagarwal/Reverse-Image-CNN'
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
+    firstName: 'Email ',
+    lastName: 'BOT',
     desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
+      'Python Script that automates the process of sending emails manually. The bot accepts your voice commands and sends or copies email to clipboard on the user\'s behalf.',
+    img: EmailBotImg,
+    tech: ['python'],
+    liveLink: 'https://github.com/skshamagarwal/EmailBot',
+    githubLink: 'https://github.com/skshamagarwal/EmailBot'
   },
   {
     id: uuidv4(),
-    name: 'Tracking Soft',
+    firstName: 'MED',
+    lastName: 'CARE',
     desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+      'Mobile Application for Consulting Doctors, keeping Track of Health Checkup, mark Important Dates and Appointments, even purchase medicines... All in one Applcation for user\'s daily Health Care Routine.',
+    img: MedCareImg,
+    tech: ['flutter', 'dart'],
+    liveLink: 'https://github.com/skshamagarwal/MedCare',
+    githubLink: 'https://github.com/skshamagarwal/MedCare'
   },
 ];
 
-export default projects;
+export default projectList;

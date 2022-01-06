@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import SectionTitle from "../components/SectionTitle";
-import MapImg from "../assets/images/map.JPG";
 import ProjectCard from "../components/ProjectCard";
+import projectList from "../assets/data/projects";
 
 const ProjectStyles = styled.div`
   padding-top: 10rem;
@@ -35,6 +35,12 @@ const ProjectStyles = styled.div`
       }
     }
   }
+  .project__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+  }
 `;
 
 export default function Projects() {
@@ -62,7 +68,9 @@ export default function Projects() {
           ))}
         </div>
         <div className="project__wrapper">
-          <ProjectCard />
+          {projectList.map((project) => (
+            <ProjectCard projects={project} />
+          ))}
         </div>
       </div>
     </ProjectStyles>
