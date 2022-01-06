@@ -1,24 +1,34 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.0fe67686.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0fe67686.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.23c7f072.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.23c7f072.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
-    "static/js/2.4d3575ab.chunk.js": "/portfolio/static/js/2.4d3575ab.chunk.js",
-    "static/js/2.4d3575ab.chunk.js.map": "/portfolio/static/js/2.4d3575ab.chunk.js.map",
+    "static/js/2.117c8c22.chunk.js": "/portfolio/static/js/2.117c8c22.chunk.js",
+    "static/js/2.117c8c22.chunk.js.map": "/portfolio/static/js/2.117c8c22.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/js/2.4d3575ab.chunk.js.LICENSE.txt": "/portfolio/static/js/2.4d3575ab.chunk.js.LICENSE.txt",
+    "static/js/2.117c8c22.chunk.js.LICENSE.txt": "/portfolio/static/js/2.117c8c22.chunk.js.LICENSE.txt",
     "static/media/LilitaOne-Regular.797856d9.ttf": "/portfolio/static/media/LilitaOne-Regular.797856d9.ttf",
     "static/media/Montserrat-Bold.079ca05d.ttf": "/portfolio/static/media/Montserrat-Bold.079ca05d.ttf",
     "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/portfolio/static/media/Montserrat-SemiBold.fa8441f3.ttf",
     "static/media/RobotoMono-Regular.418a8f9f.ttf": "/portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
+    "static/media/cap.d168fe04.JPG": "/portfolio/static/media/cap.d168fe04.JPG",
     "static/media/cv.d5632e93.pdf": "/portfolio/static/media/cv.d5632e93.pdf",
+    "static/media/email_bot.2644758e.png": "/portfolio/static/media/email_bot.2644758e.png",
+    "static/media/image_detection.fd19b74b.jpg": "/portfolio/static/media/image_detection.fd19b74b.jpg",
     "static/media/img.2fb80eb5.jpg": "/portfolio/static/media/img.2fb80eb5.jpg",
-    "static/media/map.163c261a.JPG": "/portfolio/static/media/map.163c261a.JPG"
+    "static/media/job_scraper.bff17f98.JPG": "/portfolio/static/media/job_scraper.bff17f98.JPG",
+    "static/media/map.163c261a.JPG": "/portfolio/static/media/map.163c261a.JPG",
+    "static/media/medcare.ab9942e2.JPG": "/portfolio/static/media/medcare.ab9942e2.JPG",
+    "static/media/portfolio.a1a381b6.JPG": "/portfolio/static/media/portfolio.a1a381b6.JPG",
+    "static/media/predix.3842056f.jpg": "/portfolio/static/media/predix.3842056f.jpg",
+    "static/media/result_generator.c90624db.png": "/portfolio/static/media/result_generator.c90624db.png",
+    "static/media/rfdt.5db4f79b.png": "/portfolio/static/media/rfdt.5db4f79b.png",
+    "static/media/todo_app.13494c9f.JPG": "/portfolio/static/media/todo_app.13494c9f.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.0bf68c44.js",
-    "static/js/2.4d3575ab.chunk.js",
-    "static/js/main.0fe67686.chunk.js"
+    "static/js/2.117c8c22.chunk.js",
+    "static/js/main.23c7f072.chunk.js"
   ]
 }
