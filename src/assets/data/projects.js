@@ -4,6 +4,11 @@ import CAPImg from '../images/cap.JPG'
 import ImgDetectionImg from '../images/image_detection.jpg'
 import EmailBotImg from '../images/email_bot.png'
 import MedCareImg from '../images/medcare.JPG'
+import JobScraperImg from '../images/job_scraper.JPG'
+import PortfolioImg from '../images/portfolio.JPG'
+import ResultGenImg from '../images/result_generator.png'
+import RFDTImg from '../images/rfdt.png'
+import TodoImg from '../images/todo_app.JPG'
 
 const projectList = [
   {
@@ -13,9 +18,53 @@ const projectList = [
     desc:
       'Online platform that assists users to keep track media watched, currently watching, or planning to watch next. It even delivers personalized recommendations for each individual.',
     img: PredixImg,
-    tech: ['django', 'html', 'css', 'javascript', 'ai ml', 'python'],
+    tech: ['django', 'html css', 'javascript', 'ai ml', 'python'],
     liveLink: 'https://predixdb.herokuapp.com/',
     githubLink: 'https://github.com/skshamagarwal/Predix'
+  },
+  {
+    id: uuidv4(),
+    firstName: 'Jobs ',
+    lastName: 'Scraper',
+    desc:
+      'Meta Search for Jobs, Vacancies and Internships and showing it all at a single platform. Developed while working with Frsh Tech Pvt Ltd',
+    img: JobScraperImg,
+    tech: ['javascript', 'nodejs'],
+    liveLink: 'https://frshr.in/jobs~result.html?LatestJobs-Result',
+    githubLink: ''
+  },
+  {
+    id: uuidv4(),
+    firstName: 'Web ',
+    lastName: 'Portfolio',
+    desc:
+      'My Personal Portfolio, showing all necessary details for an Computer Science Student seeking for career opportunities and extend reach. ',
+    img: PortfolioImg,
+    tech: ['html css', 'javascript', 'react', 'nodejs'],
+    liveLink: 'https://skshamagarwal.github.io/portfolio/',
+    githubLink: 'https://github.com/skshamagarwal/portfolio'
+  },
+  {
+    id: uuidv4(),
+    firstName: 'ML from  ',
+    lastName: 'Scratch',
+    desc:
+      'Implementation of Machine Learning Models - Decision Tree and Random Forest right from Scratch in Python without using any ML frameworks.',
+    img: RFDTImg,
+    tech: ['ai ml', 'python'],
+    liveLink: 'https://github.com/skshamagarwal/ML_From_Scratch/blob/master/DecisionTree.ipynb',
+    githubLink: 'https://github.com/skshamagarwal/ML_From_Scratch'
+  },
+  {
+    id: uuidv4(),
+    firstName: 'MED',
+    lastName: 'CARE',
+    desc:
+      'Mobile Application for Consulting Doctors, keeping track of Health Checkups and even mark important Dates & Appointments... All in one Applcation for user\'s daily Health Care Routine.',
+    img: MedCareImg,
+    tech: ['flutter', 'dart'],
+    liveLink: '',
+    githubLink: 'https://github.com/skshamagarwal/MedCare'
   },
   {
     id: uuidv4(),
@@ -24,7 +73,7 @@ const projectList = [
     desc:
       'Cardiovascular Ailment Prediction - an awesome Heart Attack Prediction application using Machine Learning Techniques!',
     img: CAPImg,
-    tech: ['django', 'html', 'css', 'javascript', 'ai ml', 'python'],
+    tech: ['django', 'html css', 'javascript', 'ai ml', 'python'],
     liveLink: 'https://mycap.herokuapp.com/',
     githubLink: 'https://github.com/skshamagarwal/CAP'
   },
@@ -47,19 +96,30 @@ const projectList = [
       'Python Script that automates the process of sending emails manually. The bot accepts your voice commands and sends or copies email to clipboard on the user\'s behalf.',
     img: EmailBotImg,
     tech: ['python'],
-    liveLink: 'https://github.com/skshamagarwal/EmailBot',
+    liveLink: '',
     githubLink: 'https://github.com/skshamagarwal/EmailBot'
   },
   {
     id: uuidv4(),
-    firstName: 'MED',
-    lastName: 'CARE',
+    firstName: 'TODO ',
+    lastName: 'App',
     desc:
-      'Mobile Application for Consulting Doctors, keeping track of Health Checkups and even mark important Dates & Appointments... All in one Applcation for user\'s daily Health Care Routine.',
-    img: MedCareImg,
-    tech: ['flutter', 'dart'],
-    liveLink: 'https://github.com/skshamagarwal/MedCare',
-    githubLink: 'https://github.com/skshamagarwal/MedCare'
+      'My TODO application to manage all life crises. Add Tasks you have to accomplish, mark pending or finshed even delete if needed. Simple Solution to stay productive.',
+    img: TodoImg,
+    tech: ['react', 'nodejs'],
+    liveLink: '',
+    githubLink: 'https://github.com/skshamagarwal/Todo-App'
+  },
+  {
+    id: uuidv4(),
+    firstName: 'Result ',
+    lastName: 'Generator',
+    desc:
+      'Python Script that automates the process of generating result / report cards for each student from the details stored in csv / .xlsx.',
+    img: ResultGenImg,
+    tech: ['python'],
+    liveLink: '',
+    githubLink: 'https://github.com/skshamagarwal/result-generator'
   },
 ];
 

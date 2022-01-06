@@ -53,7 +53,6 @@ export class Projects extends Component {
   }
 
   BtnClick = (name) => {
-    // console.log(name)
     if (name === "All") {
       this.setState({ projList: projectList });
     } else {
@@ -66,7 +65,12 @@ export class Projects extends Component {
           }
         }
       }
-      // console.log(tempList);
+      for (var i = tempList.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = tempList[i];
+        tempList[i] = tempList[j];
+        tempList[j] = temp;
+      }
       this.setState({ projList: tempList });
     }
   };
@@ -74,8 +78,7 @@ export class Projects extends Component {
   filter_names = [
     "All",
     "JavaScript",
-    "CSS",
-    "HTML",
+    "HTML CSS",
     "Django",
     "React",
     "NodeJs",
