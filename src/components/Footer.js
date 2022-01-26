@@ -8,7 +8,7 @@ const FooterStyles = styled.div`
   background-color: var(--deep-dark);
   .container {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     .footer__col1 {
       flex: 2;
       padding-right: 10rem;
@@ -21,7 +21,8 @@ const FooterStyles = styled.div`
       }
     }
     .footer__col2,
-    .footer__col3 {
+    .footer__col3, 
+    .footer__col4 {
       flex: 1;
     }
   }
@@ -63,7 +64,7 @@ export default function Footer() {
         </div>
         <div className="footer__col2">
           <FooterColumns
-            heading="Important Links"
+            heading="Nav Links"
             links={[
               {
                 title: "- Home",
@@ -112,6 +113,25 @@ export default function Footer() {
               {
                 title: "- Twitter",
                 path: "https://twitter.com/skshamagarwal",
+              },
+            ]}
+          />
+        </div>
+        <div className="footer__col3">
+          <FooterColumns
+            heading="Coding Profiles"
+            links={[
+              {
+                title: "- HackerRank",
+                path: "https://www.hackerrank.com/skshamagarwal",
+              },
+              {
+                title: "- CodeChef",
+                path: "https://www.codechef.com/users/skshamagarwal",
+              },
+              {
+                title: "- LeetCode",
+                path: "https://leetcode.com/skshamagarwal/",
               },
             ]}
           />
