@@ -82,8 +82,8 @@ export default function Footer() {
                 type: "Link",
               },
               {
-                title: "- Blogs",
-                path: "/blogs",
+                title: "- Experience",
+                path: "/experience",
                 type: "Link",
               },
               {
