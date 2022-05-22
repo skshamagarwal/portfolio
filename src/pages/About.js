@@ -2,7 +2,7 @@ import React from "react";
 import PText from "../components/PText";
 import styled from "styled-components";
 import AboutItems from "../components/AboutItems";
-import Img from "../assets/images/img.jpg"
+import Img from "../assets/images/img.jpeg"
 import DownloadCV from "../components/DownloadCV";
 
 const AboutStyles = styled.div`
@@ -37,7 +37,8 @@ const AboutStyles = styled.div`
       }
     }
     .right {
-      flex: 2;
+      margin-right: 20px;
+      flex: 1.5;
       img {
         border: 2px solid var(--gray-1);
       }

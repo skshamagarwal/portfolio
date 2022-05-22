@@ -125,10 +125,10 @@ export default function Footer() {
                 title: "- HackerRank",
                 path: "https://www.hackerrank.com/skshamagarwal",
               },
-              {
-                title: "- CodeChef",
-                path: "https://www.codechef.com/users/skshamagarwal",
-              },
+              // {
+              //   title: "- CodeChef",
+              //   path: "https://www.codechef.com/users/skshamagarwal",
+              // },
               {
                 title: "- LeetCode",
                 path: "https://leetcode.com/skshamagarwal/",
